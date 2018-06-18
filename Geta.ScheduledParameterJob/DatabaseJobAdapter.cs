@@ -13,7 +13,7 @@ using EPiServer.PlugIn;
 using EPiServer.Shell.WebForms;
 using EPiServer.UI.Admin;
 
-[assembly: WebResource("Get.ScheduledParameterJob.Style.JobParameters.css", "text/css")]
+[assembly: WebResource("Geta.ScheduledParameterJob.Style.JobParameters.css", "text/css")]
 namespace Geta.ScheduledParameterJob
 {
     public class DatabaseJobAdapter : PageAdapter
@@ -24,10 +24,10 @@ namespace Geta.ScheduledParameterJob
         private List<Control> ParameterControls { get; set; } // Would be a pain finding them again.
 
         private string _pluginId;
-        private string PluginId { get { return _pluginId ?? (_pluginId = ((DatabaseJob)Control).Request.QueryString["pluginId"]); } }
+        private string PluginId => _pluginId ?? (_pluginId = ((DatabaseJob)Control).Request.QueryString["pluginId"]);
 
         private Dictionary<string, object> _persistedValues;
-        private Dictionary<string, object> PersistedValues { get { return _persistedValues ?? (_persistedValues = typeof(ScheduledJobParameters).GetStore().LoadPersistedValuesFor(PluginId)); } }
+        private Dictionary<string, object> PersistedValues => _persistedValues ?? (_persistedValues = typeof(ScheduledJobParameters).GetStore().LoadPersistedValuesFor(PluginId));
 
         private ScheduledPlugInWithParametersAttribute _attribute;
         private ScheduledPlugInWithParametersAttribute Attribute
@@ -103,8 +103,7 @@ namespace Geta.ScheduledParameterJob
         private void DisplaySystemMessage()
         {
             var databaseJob = (DatabaseJob)Control;
-            var systemPageBase = databaseJob.Page as WebFormsBase;
-            if (systemPageBase == null)
+            if (!(databaseJob.Page is WebFormsBase systemPageBase))
             {
                 return;
             }
@@ -241,7 +240,7 @@ namespace Geta.ScheduledParameterJob
         {
             var cssPath = Page
                 .ClientScript
-                .GetWebResourceUrl(typeof(DatabaseJobAdapter), "EPiServer.Templates.Alloy.ScheduledParameterJob.Style.JobParameters.css");
+                .GetWebResourceUrl(typeof(DatabaseJobAdapter), "Geta.ScheduledParameterJob.Style.JobParameters.css");
             var cssLink = new HtmlLink { Href = cssPath };
             cssLink.Attributes.Add("rel", "stylesheet");
             cssLink.Attributes.Add("type", "text/css");

@@ -189,14 +189,9 @@
     <Compile Include="ScheduledPlugInWithParametersAttribute.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Style\JobParameters.css" />
+    <EmbeddedResource Include="Style\JobParameters.css" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
-    <None Include="App_Data\GeoLiteCity.dat" />
-    <None Include="modules\_protected\CMS\CMS.zip" />
-    <None Include="modules\_protected\EPiServer.Cms.TinyMce\EPiServer.Cms.TinyMce.zip" />
-    <None Include="modules\_protected\Shell\Shell.zip" />
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
