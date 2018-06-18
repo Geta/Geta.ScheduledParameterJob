@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using EPiServer.Data.Dynamic;
 
 namespace Geta.ScheduledParameterJob.Parameters
 {

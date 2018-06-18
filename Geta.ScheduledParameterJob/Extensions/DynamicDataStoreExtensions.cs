@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web.UI;
+using EPiServer.Data.Dynamic;
+using Geta.ScheduledParameterJob.Parameters;
 
 namespace Geta.ScheduledParameterJob.Extensions
 {

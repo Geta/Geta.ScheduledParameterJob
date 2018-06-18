@@ -1,4 +1,5 @@
 ﻿using System;
+using EPiServer.PlugIn;
 
 namespace Geta.ScheduledParameterJob
 {

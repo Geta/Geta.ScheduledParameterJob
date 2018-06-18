@@ -8,6 +8,10 @@ using System.Web.UI;
 using System.Web.UI.Adapters;
 using System.Web.UI.HtmlControls;
 using System.Web.UI.WebControls;
+using EPiServer.Data.Dynamic;
+using EPiServer.PlugIn;
+using EPiServer.Shell.WebForms;
+using EPiServer.UI.Admin;
 
 [assembly: WebResource("Get.ScheduledParameterJob.Style.JobParameters.css", "text/css")]
 namespace Geta.ScheduledParameterJob
@@ -125,7 +129,7 @@ namespace Geta.ScheduledParameterJob
             generalSettings.Controls.AddAt(0, fieldset);
         }
 
-        private Control CreateFieldsetFor(IEnumerable<ParameterControlDTO> controls)
+        private Control CreateFieldsetFor(IEnumerable<ParameterControlDto> controls)
         {
             var fieldset = new HtmlGenericControl("fieldset");
             fieldset.Attributes.Add("class", "job-parameters-container");
@@ -195,7 +199,7 @@ namespace Geta.ScheduledParameterJob
             databaseJob.Response.Redirect(databaseJob.Request.Url.ToString());
         }
 
-        private static Control CreateRowFor(ParameterControlDTO parameterControlDto)
+        private static Control CreateRowFor(ParameterControlDto parameterControlDto)
         {
             var rowContainer = new HtmlGenericControl("div");
             rowContainer.Attributes.Add("class", "parameter-control-container");
@@ -225,7 +229,7 @@ namespace Geta.ScheduledParameterJob
             return rowContainer;
         }
 
-        private void SetPersistedValueFor(ParameterControlDTO controlDto)
+        private void SetPersistedValueFor(ParameterControlDto controlDto)
         {
             if (PersistedValues.ContainsKey(controlDto.Id))
             {
