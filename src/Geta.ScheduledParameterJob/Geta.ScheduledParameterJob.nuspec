@@ -3,12 +3,12 @@
   <metadata>
     <id>Geta.ScheduledParameterJob</id>
     <version>$version$</version>
-    <title>$title$</title>
+    <title>Geta.ScheduledParameterJob</title>
     <authors>Geta Digital</authors>
     <owners>Geta Digital</owners>
     <projectUrl>https://github.com/Geta/Geta.ScheduledParameterJob</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>$description$</description>
+    <description>This package allows the creation of scheduled Job with parameters</description>
     <releaseNotes>EPiServer Scheduled Job with parameters</releaseNotes>
     <copyright>Copyright Geta 2018</copyright>
 	<iconUrl>http://cdn.geta.no/opensource/icons/icon-core-32x32.png</iconUrl>
