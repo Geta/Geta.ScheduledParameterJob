@@ -218,8 +218,8 @@ public class DefinitionSample : IParameterDefinitions
 
 ## More info
 
-[Blog for 7.5 upgrade](https://blog.mathiaskunto.com/2014/03/21/scheduled-jobs-with-input-parameters-in-episerver-7-5/)
-[Blog for WebForms](https://blog.mathiaskunto.com/2012/02/13/supplying-episerver-scheduled-jobs-with-parameters-through-admin-mode/)
+* [Blog for 7.5 upgrade](https://blog.mathiaskunto.com/2014/03/21/scheduled-jobs-with-input-parameters-in-episerver-7-5/)
+* [Blog for WebForms](https://blog.mathiaskunto.com/2012/02/13/supplying-episerver-scheduled-jobs-with-parameters-through-admin-mode/)
 
 ## Package maintainer
 https://github.com/digintsys
