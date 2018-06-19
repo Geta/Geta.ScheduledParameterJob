@@ -10,7 +10,7 @@ EPiServer scheduled job with parameters within the admin UI.
 * Scheduled job will run like any other.
 
 ## How to get started?
-* ``install-package Geta.ScheduledParameterJob`` *still not available*
+* ``install-package Geta.ScheduledParameterJob``
 
 * Add an App_Browsers folder to your site root if there is none there already.
 Inside the folder you should create an AdapterMappings.browser file with the content inside:
