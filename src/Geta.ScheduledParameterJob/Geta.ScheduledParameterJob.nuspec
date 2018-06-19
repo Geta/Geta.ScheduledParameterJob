@@ -1,11 +1,11 @@
 <?xml version="1.0"?>
 <package >
   <metadata>
-    <id>$id$</id>
+    <id>Geta.ScheduledParameterJob</id>
     <version>$version$</version>
     <title>$title$</title>
-    <authors>$author$</authors>
-    <owners>$author$</owners>
+    <authors>Geta Digital</authors>
+    <owners>Geta Digital</owners>
     <projectUrl>https://github.com/Geta/Geta.ScheduledParameterJob</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>$description$</description>
@@ -14,6 +14,7 @@
 	<iconUrl>http://cdn.geta.no/opensource/icons/icon-core-32x32.png</iconUrl>
     <dependencies>
       <dependency id="EPiServer.CMS.Core" version="[11.3.3, 12)" />
+	  <dependency id="EPiServer.CMS.UI" version="[11.2.3, 12)" />
     </dependencies>
   </metadata>
 </package>
