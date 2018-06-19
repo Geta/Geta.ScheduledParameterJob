@@ -6,11 +6,11 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("Geta.ScheduledParameterJob")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("This package allows the creation of scheduled Job with parameters")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("Geta Digital©")]
 [assembly: AssemblyProduct("Geta.ScheduledParameterJob")]
-[assembly: AssemblyCopyright("Copyright ©  2018")]
+[assembly: AssemblyCopyright("Copyright Geta Digital©  2018")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

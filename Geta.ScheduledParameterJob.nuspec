@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <title>$title$</title>
+    <authors>$author$</authors>
+    <owners>$author$</owners>
+    <projectUrl>https://github.com/Geta/Geta.ScheduledParameterJob</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>$description$</description>
+    <releaseNotes>EPiServer Scheduled Job with parameters</releaseNotes>
+    <copyright>Copyright Geta 2018</copyright>
+	<iconUrl>http://cdn.geta.no/opensource/icons/icon-core-32x32.png</iconUrl>
+    <dependencies>
+      <dependency id="EPiServer.CMS.Core" version="[11.3.3, 12)" />
+    </dependencies>
+  </metadata>
+</package>

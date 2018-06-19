@@ -4,8 +4,8 @@ namespace Geta.ScheduledParameterJob.Parameters
 {
     public class ParameterControlDto
     {
-        public string Id { get { return Control.ID; } }
-        public bool ShowLabel { get { return !string.IsNullOrEmpty(LabelText); } }
+        public string Id => Control.ID;
+        public bool ShowLabel => !string.IsNullOrEmpty(LabelText);
 
         public string LabelText { get; set; }
         public string Description { get; set; }
