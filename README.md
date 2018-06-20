@@ -2,12 +2,12 @@
 =============================
 
 ## Description
-EPiServer scheduled job with parameters within the admin UI.
+EPiServer scheduled job with parameters that can be configured in the admin UI.
 
 ## Features
 * Create a scheduled job with parameters to be used in the admin UI.
 * Create any parameter type that you wish and use it within your scheduled job.
-* Scheduled job will run like any other.
+* Scheduled job will work and run like any other.
 
 ## How to get started?
 * ``install-package Geta.ScheduledParameterJob``
