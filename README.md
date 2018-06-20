@@ -2,15 +2,15 @@
 =============================
 
 ## Description
-EPiServer scheduled job with parameters within the admin UI.
+EPiServer scheduled job with parameters that can be configured in the admin UI.
 
 ## Features
 * Create a scheduled job with parameters to be used in the admin UI.
 * Create any parameter type that you wish and use it within your scheduled job.
-* Scheduled job will run like any other.
+* Scheduled job will work and run like any other.
 
 ## How to get started?
-* ``install-package Geta.ScheduledParameterJob`` *still not available*
+* ``install-package Geta.ScheduledParameterJob``
 
 * Add an App_Browsers folder to your site root if there is none there already.
 Inside the folder you should create an AdapterMappings.browser file with the content inside:
@@ -25,8 +25,8 @@ Inside the folder you should create an AdapterMappings.browser file with the con
 </browsers>
 ```
 
-* Create you scheduled job extending ScheduleJob.
-* Create your Definitions (parameters) class implementing IParameterDefinitions
+* Create you scheduled job extending **ScheduledJob** class.
+* Create your Definitions (parameters) class implementing **IParameterDefinitions** interface.
 
 ## Code
 Credits: [Mathias Kunto](https://blog.mathiaskunto.com/)
@@ -34,7 +34,9 @@ Credits: [Mathias Kunto](https://blog.mathiaskunto.com/)
 ### Example scheduled job
 
 Example includes definition class with all available parameter types. Use the appropriate ones that you need for your solution.
-Make sure that you refererce the correct DefinitionsClass and DefinitionsAssembly. It should match the class that you create with the parameters.
+``
+Make sure that you reference the correct DefinitionsClass and DefinitionsAssembly in your scheduled job's attribute. It should match the definitions class that you create to add parameters. Also dont forget to load the correct plugin descriptor. 
+``
 
 ```csharp
 public class DefinitionSample : IParameterDefinitions
