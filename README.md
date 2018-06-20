@@ -35,7 +35,7 @@ Credits: [Mathias Kunto](https://blog.mathiaskunto.com/)
 
 Example includes definition class with all available parameter types. Use the appropriate ones that you need for your solution.
 ``
-Make sure that you refererce the correct DefinitionsClass and DefinitionsAssembly. It should match the class that you create with the parameters.
+Make sure that you refererce the correct DefinitionsClass and DefinitionsAssembly in your scheduled job's attribute. It should match the definitions class that you create to add parameters.
 ``
 
 ```csharp
