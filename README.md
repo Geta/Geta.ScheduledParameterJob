@@ -35,7 +35,7 @@ Credits: [Mathias Kunto](https://blog.mathiaskunto.com/)
 
 Example includes definition class with all available parameter types. Use the appropriate ones that you need for your solution.
 ``
-Make sure that you refererce the correct DefinitionsClass and DefinitionsAssembly in your scheduled job's attribute. It should match the definitions class that you create to add parameters. Also dont forget to load the correct plugin descriptor. 
+Make sure that you reference the correct DefinitionsClass and DefinitionsAssembly in your scheduled job's attribute. It should match the definitions class that you create to add parameters. Also dont forget to load the correct plugin descriptor. 
 ``
 
 ```csharp
