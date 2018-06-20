@@ -25,8 +25,8 @@ Inside the folder you should create an AdapterMappings.browser file with the con
 </browsers>
 ```
 
-* Create you scheduled job extending ScheduleJob.
-* Create your Definitions (parameters) class implementing IParameterDefinitions
+* Create you scheduled job extending **ScheduledJob** class.
+* Create your Definitions (parameters) class implementing **IParameterDefinitions** interface.
 
 ## Code
 Credits: [Mathias Kunto](https://blog.mathiaskunto.com/)
@@ -34,7 +34,9 @@ Credits: [Mathias Kunto](https://blog.mathiaskunto.com/)
 ### Example scheduled job
 
 Example includes definition class with all available parameter types. Use the appropriate ones that you need for your solution.
+``
 Make sure that you refererce the correct DefinitionsClass and DefinitionsAssembly. It should match the class that you create with the parameters.
+``
 
 ```csharp
 public class DefinitionSample : IParameterDefinitions
