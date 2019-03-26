@@ -165,7 +165,7 @@ namespace Geta.ScheduledParameterJob
             {
                 Text = "Save values",
                 ToolTip = "Saves all parameters for this scheduled job.",
-                CssClass = "epi-cmsButton-tools save-button"
+                CssClass = "epi-cmsButton-text epi-cmsButton-tools epi-cmsButton-Save"
             };
             saveButton.Click += new EventHandler(SaveValues_Click);
             var saveButtonOutline = new HtmlGenericControl("span");
