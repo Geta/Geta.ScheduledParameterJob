@@ -36,9 +36,14 @@ namespace Geta.ScheduledParameterJob
             {
                 if (_attribute == null)
                 {
-                    var descriptor = PlugInDescriptor.Load(int.Parse(PluginId));
+                    var pluginIdParsed = int.TryParse(PluginId, out var pluginId);
+                    if (!pluginIdParsed) 
+                        return null;
+
+                    var descriptor = PlugInDescriptor.Load(pluginId);
                     _attribute = descriptor.GetAttribute(typeof(ScheduledPlugInWithParametersAttribute)) as ScheduledPlugInWithParametersAttribute;
                 }
+
                 return _attribute;
             }
         }
