@@ -1,0 +1,31 @@
+version: '3.4'
+
+services:
+  geta-scheduledjobs-sample-web:
+    image: ${DOCKER_REGISTRY-}geta-scheduledjobs-sample-web
+    build:
+      context: .
+      dockerfile: Dockerfile
+    networks: 
+      geta-scheduledjobs-network:
+        ipv4_address: 172.16.238.105
+    depends_on:
+     - geta-scheduledjobs-sample-db
+    mac_address: 84-69-95-6C-7F-85
+  geta-scheduledjobs-sample-db:
+    image: microsoft/mssql-server-windows-developer:1709
+    environment:
+     - ACCEPT_EULA=Y
+     - sa_password=ScheduledJobs19
+     - attach_dbs=[{'dbName':'EPiServerDB_4a5df664','dbFiles':['C:\\data\\EPiServerDB_4a5df664.mdf','C:\\data\\EPiServerDB_4a5df664_log.ldf']}]
+    volumes:
+      - ../Geta.ScheduledParameterJob.Sample/App_Data:C:/data/
+    networks:
+      geta-scheduledjobs-network:
+        ipv4_address: 172.16.238.106
+networks:
+  geta-scheduledjobs-network:
+    ipam:
+      driver: default
+      config:
+         - subnet: '172.16.238.0/24'
