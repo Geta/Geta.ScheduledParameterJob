@@ -84,3 +84,5 @@ C:\Projects\Geta.ScheduledParameterJob\samples\Geta.ScheduledParameterJob.Sample
 C:\Projects\Geta.ScheduledParameterJob\samples\Geta.ScheduledParameterJob.Sample\bin\Debug\EPiServer.Web.WebControls.xml
 C:\Projects\Geta.ScheduledParameterJob\samples\Geta.ScheduledParameterJob.Sample\obj\Debug\docker-compose.dcprojAssemblyReference.cache
 C:\Projects\Geta.ScheduledParameterJob\samples\Geta.ScheduledParameterJob.Sample\obj\Debug\docker-compose.dcproj.CopyComplete
+C:\Projects\Geta.ScheduledParameterJob\samples\Geta.ScheduledParameterJob.Sample\bin\Debug\Geta.ScheduledParameterJob.dll
+C:\Projects\Geta.ScheduledParameterJob\samples\Geta.ScheduledParameterJob.Sample\bin\Debug\Geta.ScheduledParameterJob.pdb
