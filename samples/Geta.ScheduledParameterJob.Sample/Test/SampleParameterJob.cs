@@ -5,23 +5,22 @@ using EPiServer.Core;
 using EPiServer.Data.Dynamic;
 using EPiServer.DataAbstraction;
 using EPiServer.PlugIn;
-using Geta.ScheduledParameterJob;
 using Geta.ScheduledParameterJob.Extensions;
 using Geta.ScheduledParameterJob.Parameters;
 
-namespace ScheduledParameterJob.ExampleJob
+namespace Geta.ScheduledParameterJob.Sample.Test
 {
     [ScheduledPlugInWithParameters(
         DisplayName = "Sample parameter job",
         Description = "Sample job with parameters",
-        DefinitionsClass = "ScheduledParameterJob.ExampleJob.DefinitionSample",
-        DefinitionsAssembly = "ScheduledParameterJob"
+        DefinitionsClass = "Geta.ScheduledParameterJob.Sample.Test.DefinitionSample",
+        DefinitionsAssembly = "Geta.ScheduledParameterJob.Sample"
     )]
     public class SampleParameterJob : ScheduledJob
     {
         public static string Execute()
         {
-            var descriptor = PlugInDescriptor.Load("ScheduledParameterJob.ExampleJob.SampleParameterJob", "ScheduledParameterJob");
+            var descriptor = PlugInDescriptor.Load("Geta.ScheduledParameterJob.Sample.Test.SampleParameterJob", "Geta.ScheduledParameterJob.Sample");
             var store = typeof(ScheduledJobParameters).GetStore();
             var parameters = store.LoadPersistedValuesFor(descriptor.ID.ToString(CultureInfo.InvariantCulture));
 
