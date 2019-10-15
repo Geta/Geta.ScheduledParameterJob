@@ -224,7 +224,7 @@ public class DefinitionSample : IParameterDefinitions
 * [Blog for WebForms](https://blog.mathiaskunto.com/2012/02/13/supplying-episerver-scheduled-jobs-with-parameters-through-admin-mode/)
 
 ## Package maintainer
-https://github.com/digintsys
+https://github.com/milosmih92
 
 ## Changelog
 [Changelog](CHANGELOG.md)
