@@ -1,6 +1,9 @@
 # Scheduled job with parameters
 =============================
 
+* Master<br>
+![](http://tc.geta.no/app/rest/builds/buildType:(id:GetaPackages_GetaScheduledParameterJob_00ci),branch:master/statusIcon)
+
 ## Description
 EPiServer scheduled job with parameters that can be configured in the admin UI.
 
